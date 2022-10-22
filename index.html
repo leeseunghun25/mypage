@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="르탄이 - 프로필 링크" />
+        <meta property="og:description" content="어서와 코딩은 처음이지?" />
+        <meta property="og:image" content="공유할 이미지" />
+        <title>르탄이 - 프로필 링크</title>
+        <!-- 주석은 shift + alt + a -->
+        <style>  /* 이름표를 주고 꾸민다, body처럼 하나뿐인 테그는 이름표지정 필요 없음 */
+           /* 글꼴넣기 */
+           @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+                * {
+                    font-family: "Pretendard",serif;
+                }
+           
+           body {
+            background-color: #625a9b;
+           }
+           .profile {
+                width: 100px;
+                height: 100px;
+
+                /* background-color: blue; */
+                border-radius: 100%;
+
+                border : 2px solid white;
+
+                /* 사진은 아래 3줄 무조건 같이 다님.. */
+                background-image: url('꿀벌 주황.png');
+                background-position: center;
+                background-size: cover;
+           } 
+           .main{
+                color: white;
+                font-size: 20px;
+
+                margin-top: 30px;
+                margin-bottom: 10px;
+           }
+           .sub{
+                color: white;
+                font-size: 14px;
+                
+                margin-top: 0px;
+                margin-bottom: 30px;
+           }
+           .wrap {
+                /* background-color: greenyellow; */
+                
+                /* 양쪽 여백 밀기 : 가운데로 오기, 위->오른>밑>왼쪽 */
+                width: 300px;
+                margin: 30px auto 0px auto;
+                /* 박스안에서 내용물 정렬, 가운데로 오기 : display-flex, 4줄 붙어다님*/
+                display: flex;
+                flex-direction: column; /* row냐만 바뀜 */
+                justify-content: center;
+                align-items: center;
+           }
+           
+           /* wrap으로 이름붙인 div안에 모든 a라는 태그에 적용해줘 */
+           .wrap > a {
+                width: 300px;
+                height: 50;
+
+                background-color: white;
+                border-radius: 8px;
+
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;  
+                color: #625a9b;
+
+                display: flex;
+                flex-direction: column; /* row냐만 바뀜 */
+                justify-content: center;
+                align-items: center;
+
+                /* 하이퍼링크 줄 없애기 */
+                text-decoration: none;
+
+                /* 그림자 오른쪽 아래쪽 꼬리길이 꼬리선명도 */
+                box-shadow: 3px 3px 5px 0px rgb(215, 185, 185);
+
+           }
+
+           .wrap > a:hover {
+                background-color: #e5d2d2;
+                font-size: 18px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="profile"></div>
+            <H1 class="main">이승훈</H1>
+            <p1 class="sub">영화 좋아하시나요?</p1>
+
+            <a target="_blank" href="https://spartacodingclub.kr/">스파르타코딩클럽</a>
+            <a target="_blank" href="https://hanghae99.spartacodingclub.kr/">항해99</a>
+            <a target="_blank" href="https://chang.spartacodingclub.kr/">창업 부트캠프 창</a>
+            <a target="_blank" href="https://ddingdong.spartacodingclub.kr/">띵동코딩</a>
+        </div>
+
+    </body>
+</html>
